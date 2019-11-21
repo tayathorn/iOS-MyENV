@@ -1,0 +1,2 @@
+GREETING_MESSAGE = Hello From Develop
+API_ENDPOINT = https:/$()/dev-server.com/api/

@@ -14,6 +14,7 @@
 		4AD9B47322A137AB005774E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9B47122A137AB005774E1 /* LaunchScreen.storyboard */; };
 		4AD9B47E22A137AB005774E1 /* MyEnvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9B47D22A137AB005774E1 /* MyEnvTests.swift */; };
 		4AD9B48922A137AB005774E1 /* MyEnvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9B48822A137AB005774E1 /* MyEnvUITests.swift */; };
+		4AEE5CDD2386CEA600194AEA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEE5CDC2386CEA600194AEA /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4AD9B46522A137A9005774E1 /* MyEnv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyEnv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD9B46522A137A9005774E1 /* MyEnv-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyEnv-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD9B46822A137A9005774E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AD9B46A22A137A9005774E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4AD9B46D22A137A9005774E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,10 @@
 		4AD9B48422A137AB005774E1 /* MyEnvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyEnvUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD9B48822A137AB005774E1 /* MyEnvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEnvUITests.swift; sourceTree = "<group>"; };
 		4AD9B48A22A137AB005774E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AEE5CD92386C4CA00194AEA /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
+		4AEE5CDA2386C61D00194AEA /* Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Beta.xcconfig; sourceTree = "<group>"; };
+		4AEE5CDB2386C62A00194AEA /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		4AEE5CDC2386CEA600194AEA /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +92,7 @@
 		4AD9B46622A137A9005774E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4AD9B46522A137A9005774E1 /* MyEnv.app */,
+				4AD9B46522A137A9005774E1 /* MyEnv-Dev.app */,
 				4AD9B47922A137AB005774E1 /* MyEnvTests.xctest */,
 				4AD9B48422A137AB005774E1 /* MyEnvUITests.xctest */,
 			);
@@ -103,6 +108,7 @@
 				4AD9B46F22A137AB005774E1 /* Assets.xcassets */,
 				4AD9B47122A137AB005774E1 /* LaunchScreen.storyboard */,
 				4AD9B47422A137AB005774E1 /* Info.plist */,
+				4AEE5CD72386C46800194AEA /* Environment */,
 			);
 			path = MyEnv;
 			sourceTree = "<group>";
@@ -125,6 +131,17 @@
 			path = MyEnvUITests;
 			sourceTree = "<group>";
 		};
+		4AEE5CD72386C46800194AEA /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				4AEE5CDC2386CEA600194AEA /* Environment.swift */,
+				4AEE5CD92386C4CA00194AEA /* Develop.xcconfig */,
+				4AEE5CDA2386C61D00194AEA /* Beta.xcconfig */,
+				4AEE5CDB2386C62A00194AEA /* Production.xcconfig */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,7 +159,7 @@
 			);
 			name = MyEnv;
 			productName = MyEnv;
-			productReference = 4AD9B46522A137A9005774E1 /* MyEnv.app */;
+			productReference = 4AD9B46522A137A9005774E1 /* MyEnv-Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4AD9B47822A137AB005774E1 /* MyEnvTests */ = {
@@ -257,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AD9B46B22A137A9005774E1 /* ViewController.swift in Sources */,
+				4AEE5CDD2386CEA600194AEA /* Environment.swift in Sources */,
 				4AD9B46922A137A9005774E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +332,7 @@
 /* Begin XCBuildConfiguration section */
 		4AD9B48B22A137AB005774E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AEE5CD92386C4CA00194AEA /* Develop.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -376,6 +395,7 @@
 		};
 		4AD9B48C22A137AB005774E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AEE5CDB2386C62A00194AEA /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -433,8 +453,7 @@
 		4AD9B48E22A137AB005774E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				API_ENDPOINT = "https://dev-server.com/api/";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 657YT3L574;
 				INFOPLIST_FILE = MyEnv/Info.plist;
@@ -442,8 +461,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tayathorn.MyEnv;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tayathorn.MyEnv.Dev;
+				PRODUCT_NAME = "$(TARGET_NAME)-Dev";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,8 +471,7 @@
 		4AD9B48F22A137AB005774E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				API_ENDPOINT = "https://prod-server.com/api/";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconProd;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 657YT3L574;
 				INFOPLIST_FILE = MyEnv/Info.plist;
@@ -552,6 +570,7 @@
 		};
 		4AEE5CD32386AB9600194AEA /* Beta */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AEE5CDA2386C61D00194AEA /* Beta.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -615,8 +634,7 @@
 		4AEE5CD42386AB9600194AEA /* Beta */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				API_ENDPOINT = "https://beta-server.com/api/";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 657YT3L574;
 				INFOPLIST_FILE = MyEnv/Info.plist;
@@ -624,8 +642,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tayathorn.MyEnv;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tayathorn.MyEnv.Beta;
+				PRODUCT_NAME = "$(TARGET_NAME)-Beta";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
