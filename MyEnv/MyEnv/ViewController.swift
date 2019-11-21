@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let myEndpoint = Bundle.main.infoDictionary!["API_ENDPOINT"] as! String
+        print(myEndpoint)
     }
 
 
